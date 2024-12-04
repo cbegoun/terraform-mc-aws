@@ -115,7 +115,7 @@ resource "aws_ecs_service" "minecraft_ondemand_service" {
   }
 
   network_configuration {
-    subnets          = [aws_default_subnet.default_subnet_az1.id, aws_default_subnet.default_subnet_az2.id, aws_default_subnet.default_subnet_az3.id]
+    subnets          = [aws_default_subnet.default_subnet_az1.id, aws_subnet.default_subnet_az2.id, aws_subnet.default_subnet_az3.id]
     security_groups  = [aws_security_group.allow_minecraft_server_port.id]
     assign_public_ip = true
   }

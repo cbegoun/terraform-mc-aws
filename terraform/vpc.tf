@@ -8,12 +8,15 @@ resource "aws_default_subnet" "default_subnet_az1" {
   availability_zone = "${var.aws_region}a"
 }
 
-resource "aws_default_subnet" "default_subnet_az2" {
+resource "aws_subnet" "default_subnet_az2" {
   availability_zone = "${var.aws_region}b"
+  vpc_id = aws_default_vpc.default.id
 }
 
-resource "aws_default_subnet" "default_subnet_az3" {
+resource "aws_subnet" "default_subnet_az3" {
   availability_zone = "${var.aws_region}c"
+  vpc_id = aws_default_vpc.default.id
+
 }
 
 resource "aws_security_group" "allow_minecraft_server_port" {
