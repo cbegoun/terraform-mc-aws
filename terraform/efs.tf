@@ -27,12 +27,12 @@ resource "aws_efs_mount_target" "minecraft_ondemand_efs_mount_target_a" {
 
 resource "aws_efs_mount_target" "minecraft_ondemand_efs_mount_target_b" {
   file_system_id  = aws_efs_file_system.minecraft_ondemand_efs.id
-  subnet_id       = aws_subnet.default_subnet_az2.id
+  subnet_id       = aws_default_subnet.default_subnet_az2.id
   security_groups = [aws_security_group.allow_minecraft_server_port.id]
 }
 
 resource "aws_efs_mount_target" "minecraft_ondemand_efs_mount_target_c" {
   file_system_id  = aws_efs_file_system.minecraft_ondemand_efs.id
-  subnet_id       = aws_subnet.default_subnet_az3.id
+  subnet_id       = aws_default_subnet.default_subnet_az3.id
   security_groups = [aws_security_group.allow_minecraft_server_port.id]
 }
