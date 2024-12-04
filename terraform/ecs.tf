@@ -17,8 +17,8 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
 
-  memory = 2048
-  cpu    = 1024
+  memory = 4096
+  cpu    = 2048
 
   container_definitions = jsonencode([
     {
