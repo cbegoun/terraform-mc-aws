@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "domain_name" {
   type        = string
-  default = "initiatecyberbullying.com"
+  default     = "raeon.tech"
   description = "Your domain to create a Hosted Zone for (for 'example.com' the server will be reachable under minecraft.example.com)"
 }
 
