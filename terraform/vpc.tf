@@ -5,15 +5,15 @@ resource "aws_default_vpc" "default" {
 }
 
 resource "aws_default_subnet" "default_subnet_az1" {
-  availability_zone = format("%sa", var.aws_region)
+  availability_zone = format("${var.aws_region}a")
 }
 
 resource "aws_default_subnet" "default_subnet_az2" {
-  availability_zone = format("%sb", var.aws_region)
+  availability_zone = format("${var.aws_region}b")
 }
 
 resource "aws_default_subnet" "default_subnet_az3" {
-  availability_zone = format("%sc", var.aws_region)
+  availability_zone = format("${var.aws_region}c")
 }
 
 resource "aws_security_group" "allow_minecraft_server_port" {
