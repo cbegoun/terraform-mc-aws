@@ -9,13 +9,13 @@ resource "aws_default_subnet" "default_subnet_az1" {
 }
 
 resource "aws_subnet" "default_subnet_az2" {
-  cidr_block = "172.31.0.0/20"
+  cidr_block = "172.32.0.0/20"
   availability_zone = "${var.aws_region}b"
   vpc_id = aws_default_vpc.default.id
 }
 
 resource "aws_subnet" "default_subnet_az3" {
-  cidr_block = "172.31.0.0/20"
+  cidr_block = "172.33.0.0/20"
   availability_zone = "${var.aws_region}c"
   vpc_id = aws_default_vpc.default.id
 
