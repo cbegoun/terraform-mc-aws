@@ -8,16 +8,12 @@ resource "aws_default_subnet" "default_subnet_az1" {
   availability_zone = "${var.aws_region}a"
 }
 
-resource "aws_subnet" "default_subnet_az2" {
-  cidr_block = "24.8.0.0/16"
+resource "aws_default_subnet" "default_subnet_az2" {
   availability_zone = "${var.aws_region}b"
-  vpc_id = aws_default_vpc.default.id
 }
 
-resource "aws_subnet" "default_subnet_az3" {
-  cidr_block = "192.168.0.0/16"
+resource "aws_default_subnet" "default_subnet_az3" {
   availability_zone = "${var.aws_region}c"
-  vpc_id = aws_default_vpc.default.id
 
 }
 
