@@ -4,15 +4,15 @@ resource "aws_default_vpc" "default" {
   }
 }
 
-resource "aws_default_subnet" "default_az1" {
+resource "aws_default_subnet" "default_subnet_az1" {
   availability_zone = format("%sa", var.aws_region)
 }
 
-resource "aws_default_subnet" "default_az2" {
+resource "aws_default_subnet" "default_subnet_az2" {
   availability_zone = format("%sb", var.aws_region)
 }
 
-resource "aws_default_subnet" "default_az3" {
+resource "aws_default_subnet" "default_subnet_az3" {
   availability_zone = format("%sc", var.aws_region)
 }
 

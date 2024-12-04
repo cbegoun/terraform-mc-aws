@@ -13,7 +13,7 @@ resource "aws_datasync_location_efs" "minecraft_ondemand_efs" {
   efs_file_system_arn = aws_efs_file_system.minecraft_ondemand_efs.arn
   subdirectory        = "/minecraft"
   ec2_config {
-    subnet_arn          = aws_default_subnet.default_az1.arn
+    subnet_arn          = aws_default_subnet.default_subnet_az1.arn
     security_group_arns = [aws_security_group.allow_minecraft_server_port.arn]
   }
 

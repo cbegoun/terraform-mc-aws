@@ -34,9 +34,9 @@ No modules.
 | [aws_datasync_location_s3.backup](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/datasync_location_s3) | resource |
 | [aws_datasync_task.backup-create](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/datasync_task) | resource |
 | [aws_datasync_task.backup-restore](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/datasync_task) | resource |
-| [aws_default_subnet.default_az1](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
-| [aws_default_subnet.default_az2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
-| [aws_default_subnet.default_az3](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
+| [aws_default_subnet.default_subnet_az1](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
+| [aws_default_subnet.default_subnet_az2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
+| [aws_default_subnet.default_subnet_az3](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_subnet) | resource |
 | [aws_default_vpc.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_vpc) | resource |
 | [aws_ecs_cluster.minecraft_ondemand_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_cluster) | resource |
 | [aws_ecs_service.minecraft_ondemand_service](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_service) | resource |
