@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "minecraft_ondemand_route53_zone" {
-  name = var.domain_name
+  name = "minecraft"
   tags = var.common_tags
 }
 
