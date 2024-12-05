@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "minecraft_ondemand_route53_zone" {
-  name = "raeon_mc"
+  name = "${var.project_name}.${var.domain_name}"
   tags = var.common_tags
 }
 

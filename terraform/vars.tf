@@ -52,3 +52,8 @@ variable "common_tags" {
   }
   description = "Tag all AWS Resources"
 }
+
+variable "project_name" {
+  type = string
+  default = "minecraft"
+}
