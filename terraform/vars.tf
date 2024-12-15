@@ -54,6 +54,6 @@ variable "common_tags" {
 }
 
 variable "project_name" {
-  type = string
+  type    = string
   default = "minecraft"
 }

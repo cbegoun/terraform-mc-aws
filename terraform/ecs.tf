@@ -33,10 +33,16 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
       ]
       environment = [
         {
-          name  = "EULA"
-          value = "TRUE"
-          MOTD = "Hosted by Raeon"
-          OPS = "aa9cb796-692c-4e64-881d-9dadb9d1fcf0"
+          "name" : "EULA",
+          "value" : "TRUE"
+        },
+        {
+          "name" : "MOTD",
+          "value" : "Hosted by Raeon"
+        },
+        {
+          "name" : "OPS",
+          "value" : "aa9cb796-692c-4e64-881d-9dadb9d1fcf0"
         }
       ]
       mountPoints = [
