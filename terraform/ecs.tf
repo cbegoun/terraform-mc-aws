@@ -42,7 +42,7 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
         },
         {
           "name" : "OPS",
-          "value" : "aa9cb796-692c-4e64-881d-9dadb9d1fcf0"#file("../lambda/ops.yaml")
+          "value" : file("../terraform/ops.yaml")
         },
         {
           "name" : "PLAYER_IDLE_TIMEOUT",
