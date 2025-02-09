@@ -57,3 +57,9 @@ variable "project_name" {
   type    = string
   default = "minecraft"
 }
+
+variable "server_admins" {
+  type = list(string)
+  description = "List of server administrators"
+  default = ["aa9cb796-692c-4e64-881d-9dadb9d1fcf0","d6ba6af3-c219-4e2d-a18a-253093e788be"]
+}
