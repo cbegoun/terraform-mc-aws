@@ -42,7 +42,7 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
         },
         {
           "name" : "OPS",
-          "value" : var.server_admins
+          "value" : "aa9cb796-692c-4e64-881d-9dadb9d1fcf0,d6ba6af3-c219-4e2d-a18a-253093e788be"
         },
         {
           "name" : "PLAYER_IDLE_TIMEOUT",
