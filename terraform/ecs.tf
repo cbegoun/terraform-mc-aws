@@ -1,7 +1,6 @@
 resource "aws_ecs_cluster" "minecraft_ondemand_cluster" {
   name               = "minecraft"
   capacity_providers = ["FARGATE_SPOT"]
-
   setting {
     name  = "containerInsights"
     value = "enabled"
@@ -25,6 +24,9 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
       name      = "minecraft-server"
       image     = "itzg/minecraft-server"
       essential = false
+      linuxParameters = {
+        initProcessEnabled : true
+      }
       portMappings = [
         {
           containerPort = 25565

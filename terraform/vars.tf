@@ -59,7 +59,7 @@ variable "project_name" {
 }
 
 variable "server_admins" {
-  type = list(string)
+  type        = list(string)
   description = "List of server administrators"
-  default = ["aa9cb796-692c-4e64-881d-9dadb9d1fcf0","d6ba6af3-c219-4e2d-a18a-253093e788be"]
+  default     = ["aa9cb796-692c-4e64-881d-9dadb9d1fcf0", "d6ba6af3-c219-4e2d-a18a-253093e788be"]
 }
