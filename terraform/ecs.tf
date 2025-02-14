@@ -49,6 +49,10 @@ resource "aws_ecs_task_definition" "minecraft_ondemand_task" {
         {
           "name" : "PLAYER_IDLE_TIMEOUT",
           "value" : "30"
+        },
+        {
+          "name" : "ENABLE_COMMAND_BLOCK",
+          "value" : "TRUE"
         }
       ]
       mountPoints = [
